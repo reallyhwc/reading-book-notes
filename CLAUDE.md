@@ -1,5 +1,16 @@
 # CLAUDE.md — 读书笔记项目协作指引
 
+## 会话连续性（必读）
+
+每次新会话启动时，先读取项目记忆文件了解上次进度：
+
+```
+Read /Users/xuhu/.claude/projects/-Users-xuhu-workspace-reading-book-notes/memory/project-state.md
+Read /Users/xuhu/.claude/projects/-Users-xuhu-workspace-reading-book-notes/memory/user-preferences.md
+```
+
+MEMORY.md 会自动加载，但详情在以上两个文件中。
+
 ## 项目规范
 
 - 语言：中文正文，技术术语保留英文并括号注中文/缩写
@@ -14,8 +25,8 @@
 - D. 关键人物/事件 — 重要人物、里程碑事件
 - E. AI 补充背景 — 书中未展开但相关的背景知识
 
-## 协作流程
+## 协作流程（对话驱动模式）
 
-1. 用户指定书籍 → 产出全书 notes
-2. 用户阅读后在 raw/ 中补充感想
-3. 用户标记具体触动点 → 可深度扩展
+1. 用户在对话中聊感想、触动、质疑 → AI 提炼并写入 raw/ 对应文件
+2. raw/ 中的笔记积累后，可能反向更新 notes/ 中的正式笔记
+3. 每本书新增时，按已有模板创建目录和笔记骨架
