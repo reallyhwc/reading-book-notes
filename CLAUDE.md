@@ -2,14 +2,14 @@
 
 ## 会话连续性（必读）
 
-每次新会话启动时，先读取项目记忆文件了解上次进度：
+每次新会话启动时，先读取项目内记忆文件（可跨设备同步）：
 
 ```
-Read /Users/xuhu/.claude/projects/-Users-xuhu-workspace-reading-book-notes/memory/project-state.md
-Read /Users/xuhu/.claude/projects/-Users-xuhu-workspace-reading-book-notes/memory/user-preferences.md
+Read .claude/memory/project-state.md
+Read .claude/memory/user-preferences.md
 ```
 
-MEMORY.md 会自动加载，但详情在以上两个文件中。
+项目级 MEMORY.md 位于 `.claude/memory/MEMORY.md`，会自动加载。用户级记忆（`~/.claude/projects/...`）也会同时生效，两者互为补充。
 
 ## 项目规范
 
