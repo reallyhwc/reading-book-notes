@@ -8,19 +8,27 @@
 
 ## 内容简介
 
-李飞飞的自传，记录了她从中国移民到美国、成为人工智能领域顶尖科学家的历程。书中交织了个人成长故事与人工智能（尤其是计算机视觉）的发展史，从 ImageNet 的诞生到 AI 伦理的思考。
+李飞飞自传，记录从中国移民到美国、成为人工智能领域顶尖科学家的历程。书中交织了个人成长故事与计算机视觉发展史，从 ImageNet 的诞生到 AI 伦理的思考。
 
-## 目录
+## 章节笔记
 
-1. 如坐针毡的华盛顿之行
-2. 逐梦之旅
-3. 鸿沟渐窄
-4. 心智探索
-5. 第一道光
-6. 北极星
-7. 一个假设
-8. 实验验证
-9. 万物以外是什么
-10. 似易实难
-11. 无人可控
-12. 下一颗北极星
+| 章节 | 正式笔记 (notes) | 个人感想 (raw) |
+|------|------------------|----------------|
+| 1. 如坐针毡的华盛顿之行 | [→](notes/chapter-01.md) | [→](raw/chapter-01.md) |
+| 2. 逐梦之旅 | [→](notes/chapter-02.md) | [→](raw/chapter-02.md) |
+| 3. 鸿沟渐窄 | [→](notes/chapter-03.md) | [→](raw/chapter-03.md) |
+| 4. 心智探索 | [→](notes/chapter-04.md) | [→](raw/chapter-04.md) |
+| 5. 第一道光 | [→](notes/chapter-05.md) | [→](raw/chapter-05.md) |
+| 6. 北极星 | [→](notes/chapter-06.md) | [→](raw/chapter-06.md) |
+| 7. 一个假设 | [→](notes/chapter-07.md) | [→](raw/chapter-07.md) |
+| 8. 实验验证 | [→](notes/chapter-08.md) | [→](raw/chapter-08.md) |
+| 9. 万物以外是什么 | [→](notes/chapter-09.md) | [→](raw/chapter-09.md) |
+| 10. 似易实难 | [→](notes/chapter-10.md) | [→](raw/chapter-10.md) |
+| 11. 无人可控 | [→](notes/chapter-11.md) | [→](raw/chapter-11.md) |
+| 12. 下一颗北极星 | [→](notes/chapter-12.md) | [→](raw/chapter-12.md) |
+
+## 专题讨论 (raw/)
+
+- [AI 的终极目的与人的意义](raw/topic-the-ultimate-purpose-of-ai.md)
+- [传奇背后的真实故事——移民、身份与学术影响](raw/topic-the-real-story-behind-the-legend.md)
+- [CNN、RNN、Transformer 技术概念梳理](raw/topic-cnn-rnn-transformer-explained.md)
