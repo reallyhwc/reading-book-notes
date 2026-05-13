@@ -20,8 +20,9 @@ type: feedback
 1. 写 `raw/chapter-XX.md` 或 `raw/topic-<slug>.md`
 2. 更新 `.claude/memory/project-state.md`
 3. commit（此场景允许自动 commit）
+4. push（本项目不区分分支）
 
-步骤 1-3 必须在同一轮回复中完成。不能先回答再"下次补"。
+步骤 1-4 必须在同一轮回复中完成。不能先回答再"下次补"。
 
 ## 自检规则
 
