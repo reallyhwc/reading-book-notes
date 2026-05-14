@@ -23,7 +23,7 @@
 
 ### 三院院士，学术产出够硬吗？
 
-她的核心贡献：ImageNet（2009，1400 万标注图像），以及之前的 Caltech 101 和之后的 Visual Genome。300+ 论文，h-index ~150。
+她的核心贡献：ImageNet（2009，1400 万标注图像），以及之前的 Caltech 101 和之后的 Visual Genome。300+ 论文，h-index ~180+（截至 2025 年中，Google Scholar 数据）。
 
 但如果比较基准是 Hinton（反向传播、玻尔兹曼机、深度信念网络、Dropout）、LeCun（CNN 奠基人），那她确实没有一系列改变底层算法的理论突破。她的影响力在另一个维度：
 

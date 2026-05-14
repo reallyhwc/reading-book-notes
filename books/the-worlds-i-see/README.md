@@ -14,18 +14,18 @@
 
 | 章节 | 正式笔记 (notes) | 个人感想 (raw) |
 |------|------------------|----------------|
-| 1. 如坐针毡的华盛顿之行 | [→](notes/chapter-01.md) | [→](raw/chapter-01.md) |
-| 2. 逐梦之旅 | [→](notes/chapter-02.md) | [→](raw/chapter-02.md) |
-| 3. 鸿沟渐窄 | [→](notes/chapter-03.md) | [→](raw/chapter-03.md) |
-| 4. 心智探索 | [→](notes/chapter-04.md) | [→](raw/chapter-04.md) |
-| 5. 第一道光 | [→](notes/chapter-05.md) | [→](raw/chapter-05.md) |
-| 6. 北极星 | [→](notes/chapter-06.md) | [→](raw/chapter-06.md) |
-| 7. 一个假设 | [→](notes/chapter-07.md) | [→](raw/chapter-07.md) |
-| 8. 实验验证 | [→](notes/chapter-08.md) | [→](raw/chapter-08.md) |
-| 9. 万物以外是什么 | [→](notes/chapter-09.md) | [→](raw/chapter-09.md) |
-| 10. 似易实难 | [→](notes/chapter-10.md) | [→](raw/chapter-10.md) |
-| 11. 无人可控 | [→](notes/chapter-11.md) | [→](raw/chapter-11.md) |
-| 12. 下一颗北极星 | [→](notes/chapter-12.md) | [→](raw/chapter-12.md) |
+| 1. 如坐针毡的华盛顿之行 | [→](notes/chapter-01.md) | — |
+| 2. 逐梦之旅 | [→](notes/chapter-02.md) | — |
+| 3. 鸿沟渐窄 | [→](notes/chapter-03.md) | — |
+| 4. 心智探索 | [→](notes/chapter-04.md) | — |
+| 5. 第一道光 | [→](notes/chapter-05.md) | — |
+| 6. 北极星 | [→](notes/chapter-06.md) | — |
+| 7. 一个假设 | [→](notes/chapter-07.md) | — |
+| 8. 实验验证 | [→](notes/chapter-08.md) | — |
+| 9. 万物以外是什么 | [→](notes/chapter-09.md) | — |
+| 10. 似易实难 | [→](notes/chapter-10.md) | — |
+| 11. 无人可控 | [→](notes/chapter-11.md) | — |
+| 12. 下一颗北极星 | [→](notes/chapter-12.md) | — |
 
 ## 专题讨论 (raw/)
 

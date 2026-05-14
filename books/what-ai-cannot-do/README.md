@@ -15,7 +15,7 @@
 |------|------------------|----------------|
 | 前言 · 回归常识的科学 | [→](notes/chapter-00-preface.md) | — |
 | 第一章 · 知无不言 | [→](notes/chapter-01.md) | — |
-| 第二章 · 基本的逻辑 | [→](notes/chapter-02.md) | — |
+| 第二章 · 基本的逻辑 | [→](notes/chapter-02.md) | [→](raw/chapter-02.md) |
 | 第三章 · 理性的终极理想 | [→](notes/chapter-03.md) | — |
 | 第四章 · 伟大的聊天 | [→](notes/chapter-04.md) | — |
 | 第五章 · 哥德尔不完备定理 | [→](notes/chapter-05.md) | — |

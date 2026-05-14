@@ -32,6 +32,7 @@ Read .claude/memory/user-preferences.md
 - 语言：中文正文，技术术语保留英文并括号注中文/缩写
 - 例：卷积神经网络（Convolutional Neural Network, CNN）
 - 笔记模板：每章固定 A~E 五个板块
+- 术语格式与文件命名详细规范见：`.claude/memory/writing-conventions.md`
 
 ## 笔记板块
 
