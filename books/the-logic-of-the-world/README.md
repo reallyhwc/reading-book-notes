@@ -59,6 +59,7 @@
 
 ## 专题讨论 (raw/)
 
+- [贝叶斯统计与 AI 的关系](raw/topic-bayesian-statistics-and-ai.md)
 - [哥德尔不完备定理与图灵机——跨书比较](raw/topic-cross-godel-and-turing.md)
 
 > — 表示笔记尚未填充，阅读进行中。
