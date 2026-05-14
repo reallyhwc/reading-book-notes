@@ -15,7 +15,7 @@
 
 | | 正式笔记 | 个人感想 |
 |---|---|---|
-| 引言 · 认识世界的必经之路 | [→](notes/chapter-00-introduction.md) | — |
+| 引言 · 认识世界的必经之路 | [→](notes/chapter-00-introduction.md) | [→](raw/chapter-00-introduction.md) |
 
 ### 第一部分 · 人类对确定性的追求
 
