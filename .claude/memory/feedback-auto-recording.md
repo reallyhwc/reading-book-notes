@@ -22,6 +22,14 @@ type: feedback
 1. 写 `raw/chapter-XX.md` 或 `raw/topic-<slug>.md`
    - 跨书比较 → 写到**当前阅读**书目录的 `raw/topic-cross-<slug>.md`，文件头注明涉及的书
    - 阅读方法论 → 写到 `.claude/memory/journal-<date>.md`（项目级反思，不属于任何一本书）
+   - **追加规则**：如果已存在同主题的 raw/ 文件，追加新的对话记录到该文件中（用日期分割线区分轮次），而不是创建新文件。格式如下：
+     ```
+     ---
+     > 追加：YYYY-MM-DD
+
+     （新一轮对话内容）
+     ```
+     追加后同步更新文件末尾的"要点提炼"和"待继续思考"部分。
 2. 更新 `.claude/memory/project-state.md`
 3. commit（此场景允许自动 commit）
 4. push（本项目不区分分支）

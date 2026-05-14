@@ -32,9 +32,9 @@
   - [x] 删除 raw/chapter-01.md ~ raw/chapter-12.md（12 个空壳文件）
   - [x] 更新《我看见的世界》README.md，将 raw 列链接改为 —
 
-- [/] **提交并推送所有改动**
-  - [ ] git add + commit（docs: 修复笔记事实性错误，新增写作规范约束）
-  - [ ] git push
+- [x] **提交并推送所有改动**
+  - [x] git add + commit（docs: 修复笔记事实性错误，新增写作规范约束，清理空壳文件）
+  - [x] git push
 
 ---
 生成时间: 2026/5/14 11:16:11

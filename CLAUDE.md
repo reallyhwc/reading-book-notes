@@ -31,7 +31,7 @@ Read .claude/memory/user-preferences.md
 
 - 语言：中文正文，技术术语保留英文并括号注中文/缩写
 - 例：卷积神经网络（Convolutional Neural Network, CNN）
-- 笔记模板：每章固定 A~E 五个板块
+- 笔记模板：每章最多 A~F 六个板块（A 必填，B~F 按章节内容特点选填）
 - 术语格式与文件命名详细规范见：`.claude/memory/writing-conventions.md`
 
 ## 笔记板块
@@ -41,12 +41,13 @@ Read .claude/memory/user-preferences.md
 - C. 人文/思想洞察 — 人文关怀、科学家精神、社会影响
 - D. 关键人物/事件 — 重要人物、里程碑事件
 - E. AI 补充背景 — 书中未展开但相关的背景知识
+- F. 个人批注 — 阅读时的个人触动、质疑和联想（从 `<!-- NOTES -->` 注释迁移为可见内容）
 
 ## 协作流程（对话驱动模式）
 
 1. 用户在对话中聊感想、触动、质疑 → AI 提炼并写入 raw/ 对应文件
 2. raw/ 中的笔记积累后，可能反向更新 notes/ 中的正式笔记
-3. 每本书新增时，按已有模板创建目录和笔记骨架
+3. 每本书新增时，仅创建 README.md 和目录结构（notes/, raw/, media/），不预创建 chapter 骨架文件。聊到哪章时按需创建对应的 notes/ 和 raw/ 文件。
 
 ### 对话自动沉淀规则（不可跳过）
 
