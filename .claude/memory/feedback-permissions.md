@@ -8,4 +8,4 @@ type: feedback
 
 **Why:** 用户表示"后续此类操作可以不用问我"——这些都属于笔记项目工作流内部的常规操作，逐次确认只会增加摩擦。
 
-**How to apply:** 在读书笔记项目内，所有读写文件、创建目录、git commit（自动沉淀场景）都不用再确认。但 git push 等影响远程的操作仍需确认。
+**How to apply:** 在读书笔记项目内，所有读写文件、创建目录、git commit + push（自动沉淀场景）都不用再确认（详见 feedback-auto-push.md）。

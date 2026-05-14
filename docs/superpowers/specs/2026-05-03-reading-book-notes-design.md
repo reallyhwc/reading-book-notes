@@ -1,3 +1,5 @@
+> **[ARCHIVED]** 本文档是项目创建时的初始设计稿，部分内容已过时（如 raw/ 的定位已从"用户补充标注"演化为"对话式深度讨论"）。当前权威文档是 [CLAUDE.md](/CLAUDE.md) 和 [README.md](/README.md)。
+
 # Reading Book Notes — 项目设计
 
 ## 目标

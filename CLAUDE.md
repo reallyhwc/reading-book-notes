@@ -1,8 +1,24 @@
 # CLAUDE.md — 读书笔记项目协作指引
 
-## 会话连续性（必读）
+## 快速状态（每次会话的最低上下文）
 
-每次新会话启动时，先读取项目内记忆文件（可跨设备同步）：
+- **当前书籍**：《世界的逻辑》（马兆远）— 阅读中，第一章起
+- **暂停书籍**：《人工智能之不能》（马兆远）— 第二章
+- **已完成**：《我看见的世界》（李飞飞）— 12 章 + 3 专题
+- 详细状态：`.claude/memory/project-state.md`
+- 用户偏好：`.claude/memory/user-preferences.md`
+
+## 环境兼容
+
+本项目支持在以下环境中使用：
+- **Claude Code + DeepSeek**：原生环境，memory 文件自动加载，superpowers skill 可用
+- **Aone Copilot（IDE 插件）**：需手动读取 memory 文件恢复上下文；superpowers skill 需通过 read_file 加载后手动遵循流程
+
+两个环境共享同一套文件和 Git 仓库，切换时无需额外操作。
+
+## 会话连续性
+
+每次新会话启动时，读取以下记忆文件（如环境不自动加载，需手动读取）：
 
 ```
 Read .claude/memory/project-state.md
