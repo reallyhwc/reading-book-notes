@@ -57,4 +57,8 @@
 |---|---|---|
 | 结语 · 应对不确定性的世界 | [→](notes/chapter-15-conclusion.md) | — |
 
+## 专题讨论 (raw/)
+
+- [哥德尔不完备定理与图灵机——跨书比较](raw/topic-cross-godel-and-turing.md)
+
 > — 表示笔记尚未填充，阅读进行中。
