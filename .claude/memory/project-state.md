@@ -19,7 +19,7 @@ type: project
 - **《世界的逻辑》引言**（3 轮）：天圆地方、布鲁诺、科学的行规、希尔伯特纲领。文件：`raw/chapter-00-introduction.md`
 - **贝叶斯统计与 AI**：文件：`raw/topic-bayesian-statistics-and-ai.md`
 - **跨书：哥德尔与图灵机**：文件：`raw/topic-cross-godel-and-turing.md`
-- **《秦二世必须死》**：初始概览已给，待用户聊到具体内容再建 raw/ 文件
+- **《秦二世必须死》**：初始概览已给，聊到棘市追捕场景（重瞳剑客=项家人，非张良）。暂未建 raw/
 
 ## 待办
 
