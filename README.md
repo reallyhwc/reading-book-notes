@@ -11,6 +11,7 @@
 | 1 | 《我看见的世界》 | 李飞飞 (Fei-Fei Li) | 已读完 | [→](books/the-worlds-i-see/) |
 | 2 | 《人工智能之不能》 | 马兆远 | 暂停中 | [→](books/what-ai-cannot-do/) |
 | 3 | 《世界的逻辑》 | 马兆远 | 阅读中 | [→](books/the-logic-of-the-world/) |
+| 4 | 《秦二世必须死》 | 马伯庸 | 阅读中 | [→](books/qin-ii-must-die/) |
 
 ## 目录结构
 
