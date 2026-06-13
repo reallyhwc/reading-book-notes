@@ -53,11 +53,38 @@ Read .claude/memory/user-preferences.md
 - E. AI 补充背景 — 书中未展开但相关的背景知识
 - F. 个人批注 — 阅读时的个人触动、质疑和联想（从 `<!-- NOTES -->` 注释迁移为可见内容）
 
-## 协作流程（对话驱动模式）
+## 协作流程（Baseline + 讨论驱动模式）
+
+### 新书开始
+
+1. 用户决定读某本新书 → AI 创建 `books/<slug>/` 目录结构（README.md + notes/ + raw/ + media/）
+2. AI 分派多个 Sub-Agent 并行检索并生成全量 baseline notes（notes/chapter-XX.md，每章填 A~E 板块）
+3. 每章 notes 写入前过 Harness 阻断式审查（格式 + 事实 + 一致性），不通过打回 Agent 重写
+4. 全部通过后 commit
+
+### 阅读讨论中
 
 1. 用户在对话中聊感想、触动、质疑 → AI 提炼并写入 raw/ 对应文件
-2. raw/ 中的笔记积累后，可能反向更新 notes/ 中的正式笔记
-3. 每本书新增时，仅创建 README.md 和目录结构（notes/, raw/, media/），不预创建 chapter 骨架文件。聊到哪章时按需创建对应的 notes/ 和 raw/ 文件。
+2. raw/ 中的笔记积累后，可反向更新 notes/ 中的正式笔记（同样过 Harness 审查）
+3. 文件创建时机：raw/ 文件在讨论触发时按需创建或追加
+
+### Harness 校验层
+
+每次写入 notes/ 前，过三道检查。全部阻断式——不通过不写入。
+
+| 检查层 | 内容 | 执行者 |
+|--------|------|--------|
+| L1 格式 | 术语标注格式、文件命名、A~F 板块完整性、文件头元信息 | 主 Agent 自检 |
+| L2 事实 | 人名/年份/概念定义是否准确，引用是否可验证 | Sub-Agent (Content Reviewer) |
+| L3 一致性 | 和已有笔记是否矛盾，跨书概念冲突 | Sub-Agent (Content Reviewer) |
+
+### Agent 角色
+
+| Agent | 触发时机 | 职责 |
+|-------|----------|------|
+| Baseline Generator × N | 新书开始 | 并行 WebSearch + 生成各章 notes/（A~E） |
+| Content Reviewer | 每次 notes/ 写入/更新前 | L2 事实校验 + L3 一致性检查 |
+| Main Agent | 持续 | 对话、写 raw/、调度 sub-agent、最终 commit |
 
 ### 对话自动沉淀规则（不可跳过）
 

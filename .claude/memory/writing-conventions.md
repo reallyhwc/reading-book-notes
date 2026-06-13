@@ -57,7 +57,7 @@ type: project
 
 ## 文件创建时机
 
-- **notes/chapter-XX.md**：当用户聊到某章内容、且对话中产生了足够的结构化信息时创建。不预创建空骨架。
+- **notes/chapter-XX.md**：新书开始时由 Multi-Agent 并行检索并全量生成 baseline（A~E 板块）。阅读讨论中如产生新知识或修正，反向更新对应章节的 notes/。
 - **raw/chapter-XX.md 或 raw/topic-*.md**：当对话满足自动沉淀触发条件时创建（见 feedback-auto-recording.md）。
 - **新书加入时**：仅创建 `books/<slug>/README.md` 和 `notes/`、`raw/`、`media/` 三个空目录（含 .gitkeep）。
 
@@ -86,3 +86,41 @@ A~F 六个板块的使用原则：
 6. 与已有笔记是否存在事实性矛盾？
 
 此清单不需要输出给用户，AI 内部自检即可。
+
+## 可检查规则（Harness 校验输入）
+
+以下规则在每次写入 notes/ 前作为 Harness 校验的输入。全部阻断式（BLOCK），不通过拒绝写入。
+
+### R1: 术语首次出现格式
+- **CHECK**: 正文中每个英文术语首次出现时，是否匹配 `中文全称（English Full Name, 缩写）` 格式
+- **SEVERITY**: BLOCK
+- **反例**: "CNN（卷积神经网络）"（顺序颠倒）、"卷积神经网络"（缺英文）
+- **豁免**: 同一术语在同一文件中后续出现可只用中文或缩写
+
+### R2: 文件命名
+- **CHECK**: notes/ 下文件名是否匹配 `chapter-\d{2}\.md` 或 `chapter-\d{2}-(preface|introduction|postscript|conclusion)\.md`
+- **SEVERITY**: BLOCK
+
+### R3: 板块 A 完整性
+- **CHECK**: A. 章节概述 板块是否存在且非空（至少 50 字）
+- **SEVERITY**: BLOCK
+
+### R4: 板块 B~E 合理性
+- **CHECK**: B/C/D/E 板块如填写，内容是否与板块定义匹配（技术要点归 B，思想洞察归 C，人物归 D，AI 补充归 E）
+- **SEVERITY**: BLOCK
+
+### R5: 人物/事件准确性
+- **CHECK**: 提到的人物全名、生卒年份、职称/角色是否经 WebSearch 验证
+- **SEVERITY**: BLOCK
+
+### R6: 跨书概念一致性
+- **CHECK**: 同一概念在不同书的 notes/ 中定义是否一致；如不一致，是否有明确说明
+- **SEVERITY**: BLOCK
+
+### R7: raw/ 文件双层结构
+- **CHECK**: raw/ 文件是否包含：对话记录（正文 80%）+ 要点提炼（3-5 bullet）+ 待继续思考（2-3 问题）
+- **SEVERITY**: BLOCK
+
+### R8: raw/ 文件头元信息
+- **CHECK**: raw/ 文件开头是否有 `> 触发：...` 和 `> 日期：YYYY-MM-DD` 元信息行
+- **SEVERITY**: BLOCK
