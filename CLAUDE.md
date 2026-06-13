@@ -80,11 +80,15 @@ Read .claude/memory/user-preferences.md
 
 ### Agent 角色
 
-| Agent | 触发时机 | 职责 |
-|-------|----------|------|
-| Baseline Generator × N | 新书开始 | 并行 WebSearch + 生成各章 notes/（A~E） |
-| Content Reviewer | 每次 notes/ 写入/更新前 | L2 事实校验 + L3 一致性检查 |
-| Main Agent | 持续 | 对话、写 raw/、调度 sub-agent、最终 commit |
+Agent 模板文件位于 `.claude/agents/`，派发时 Read 对应模板获取标准 prompt。
+
+| Agent | 模板 | 触发时机 | 职责 |
+|-------|------|----------|------|
+| Baseline Generator × N | `.claude/agents/baseline-generator.md` | 新书开始 | 并行 WebSearch + 生成各章 notes/（A~E），每 Agent 负责 3-5 章 |
+| Content Reviewer | `.claude/agents/content-reviewer.md` | 每次 notes/ 写入/更新后 | L2 事实校验 + L3 一致性检查，输出 BLOCK 问题列表 |
+| Main Agent | — | 持续 | 对话、写 raw/、调度 sub-agent、修正 Reviewer 发现的问题、最终 commit |
+
+派发 Agent 时使用 Claude Code 内置 `Agent` 工具（`subagent_type: general-purpose`），prompt 从模板文件读取并填充具体参数（书名、章节、文件路径等）。
 
 ### 对话自动沉淀规则（不可跳过）
 
