@@ -16,7 +16,7 @@
 | 章节 | 正式笔记 (notes) | 个人感想 (raw) |
 |------|------------------|----------------|
 | 前言 · 从了解现状开始 | [→](notes/chapter-00-preface.md) | — |
-| 第一章 · 地方政府的权力与事务 | [→](notes/chapter-01.md) | — |
+| 第一章 · 地方政府的权力与事务 | [→](notes/chapter-01.md) | [→](raw/chapter-01.md) |
 | 第二章 · 财税与政府行为 | [→](notes/chapter-02.md) | — |
 | 第三章 · 政府投融资与债务 | [→](notes/chapter-03.md) | — |
 | 第四章 · 工业化中的政府角色 | [→](notes/chapter-04.md) | — |
